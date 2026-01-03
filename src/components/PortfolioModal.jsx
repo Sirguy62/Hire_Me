@@ -32,7 +32,7 @@ export default function PortfolioModal({ item, onClose }) {
           ✕
         </button>
         <div>
-          <Image src={item.image} alt="modal" width={700} height={600} />
+          <Image src={item.image} alt="modal" width={700} height={600} className="rounded-md"/>
         </div>
 
         <div className="py-6">
@@ -70,7 +70,7 @@ export default function PortfolioModal({ item, onClose }) {
             className="flex justify-center bg-[#D4B15F] py-3 w-full rounded-xl items-center text-lg gap-4"
           >
             Preview
-            <FaRegEye className="text-white text-3xl scale-90 group-hover:scale-100 transition-transform duration-300" />
+            <FaRegEye size={20} className="text-white text-3xl scale-90 group-hover:scale-100 transition-transform duration-300" />
           </Link>
         </div>
       </div>

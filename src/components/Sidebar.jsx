@@ -41,6 +41,7 @@ const CONTACTS = [
 export default function Sidebar() {
   const [showContacts, setShowContacts] = useState(false);
   const sidebarRef = useRef(null);
+  const [open, setOpen] = useState(true);
 
   /* CLICK OUTSIDE TO CLOSE */
   useEffect(() => {
@@ -62,7 +63,12 @@ export default function Sidebar() {
   return (
     <aside
       ref={sidebarRef}
-      className="relative w-full bg-[#201f1f] rounded-2xl px-2 pt-2 lg:p-6 max-w-174.5 lg:w-70"
+      className={`relative w-full lg:sticky bg-[#201f1f] rounded-2xl px-2 pt-2 lg:p-6 max-w-174.5   transition-[max-height,opacity]
+    duration-500
+    ease-[cubic-bezier(0.4,0,0.2,1)]
+    overflow-hidden ${
+      open ? "max-h-[900px] opacity-100" : "max-h-[120px] opacity-90"
+    } `}
     >
       <button
         onClick={() => setShowContacts(!showContacts)}
@@ -93,14 +99,12 @@ export default function Sidebar() {
     before:-z-10
   "
       >
-        {/* ICON — ONLY on sm */}
         <RiArrowDropDownLine
-          className={`block sm:hidden text-xl transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+          className={`transition-transform duration-300 ${
             showContacts ? "rotate-180" : ""
           }`}
         />
 
-        {/* TEXT — above sm */}
         <span className="hidden sm:block text-sm">
           {showContacts ? "Hide Contacts" : "Show Contacts"}
         </span>
@@ -108,7 +112,7 @@ export default function Sidebar() {
 
       {/* PROFILE */}
       <div className="flex items-center gap-4 lg:flex-col lg:text-center">
-        <div className="md:mr-3">
+        <div className="md:mr-3 lg:hidden">
           <Image
             className="rounded-md"
             src="/image/profile.jpg"
@@ -117,7 +121,15 @@ export default function Sidebar() {
             height={30}
           />
         </div>
-
+        <div className="md:mr-3 hidden lg:block">
+          <Image
+            className="rounded-md"
+            src="/image/profile.jpg"
+            alt="profile"
+            width={160}
+            height={60}
+          />
+        </div>
         <div>
           <div className="flex flex-col lg:gap-3">
             <h2 className="text-xl md:text-2xl font-semibold">Edwin Gospel</h2>
@@ -146,9 +158,6 @@ export default function Sidebar() {
           </div>
         </div>
       </div>
-
-      {/* CONTACTS (SLIDE-DOWN ANIMATION) */}
-      {/* CONTACTS (ANIMATED SLIDE-DOWN) */}
       <div
         className={`
     overflow-hidden
@@ -160,7 +169,7 @@ export default function Sidebar() {
     text-gray-400
 
     transition-[max-height,opacity,transform]
-    duration-600
+    duration-500
     ease-[cubic-bezier(0.4,0,0.2,1)]
 
     ${
@@ -179,25 +188,18 @@ export default function Sidebar() {
           {CONTACTS.map(({ label, value, icon: Icon }, i) => (
             <li
               key={label}
+              style={{ transitionDelay: `${i * 75}ms` }}
               className={`
-          flex items-center gap-4
-          transition-all
-          duration-400
-          delay-[${i * 75}ms]
-          ${
-            showContacts
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 translate-x-2"
-          }
-          lg:opacity-100 lg:translate-x-0
-        `}
+    flex items-center gap-4
+    transition-all
+    duration-400
+    ${showContacts ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2"}
+    lg:opacity-100 lg:translate-x-0
+  `}
             >
-              {/* Icon box */}
               <div className="w-8 h-8 flex items-center justify-center rounded-xl bg-[#1d1d1d] text-orange-400 ring-1 ring-orange-400/40">
                 <Icon size={15} />
               </div>
-
-              {/* Text */}
               <div>
                 <p className="text-xs uppercase text-gray-500">{label}</p>
                 <p className="text-white">{value}</p>

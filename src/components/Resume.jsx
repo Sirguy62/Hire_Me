@@ -1,7 +1,6 @@
 export default function Resume() {
   return (
     <article className="bg-[#1a1a1a] rounded-2xl p-6 max-w-174.5 lg:max-w-217">
-      {/* HEADER */}
       <header className="mb-6">
         <h2 className="text-2xl font-bold">Resume</h2>
         <div className="my-2 h-1 w-full bg-gray-700/40 rounded-full overflow-hidden">
@@ -9,17 +8,13 @@ export default function Resume() {
         </div>
       </header>
 
-      {/* ===================== */}
-      {/* EDUCATION */}
-      {/* ===================== */}
       <section className="mb-10">
         <h3 className="flex items-center gap-2 text-lg font-semibold mb-6">
           <span className="text-[#D4B15F]">📘</span> Education
         </h3>
 
-        {/* TIMELINE */}
         <ol className="relative pl-6 border-l border-gray-700">
-          {/* ITEM 1 */}
+ 
           <li
             className="
               relative

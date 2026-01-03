@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-black w-full text-white">
         <div className="min-h-screen flex justify-center lg:items-center">
-          <div className="max-w-7xl min-h-screen w-full flex flex-col lg:flex-row gap-6">
+          <div className="max-w-7xl min-h-screen w-full flex flex-col lg:flex-row gap-6 lg:ml-15">
             {children}
           </div>
         </div>

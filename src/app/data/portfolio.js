@@ -18,11 +18,11 @@ export const portfolioItems = [
     name: "Workflow",
     title: "Web Applications",
     description: "Full-stack scalable applications.",
-    image: "/image/project.png",
+    image: "/image/coming.jpg",
     longDescription:
       "Robust web applications with authentication, APIs, and databases.",
     stack: ["Next.js", "Node.js", "MongoDB"],
-    link: "https://github.com/Sirguy62/potfolio",
-    app: "https://bookora-mu.vercel.app",
+    link: "https://github.com/Sirguy62/workflow",
+    app: "https://workflow-ebon-nu.vercel.app",
   },
 ];
