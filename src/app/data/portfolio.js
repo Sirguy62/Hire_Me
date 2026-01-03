@@ -9,7 +9,7 @@ export const portfolioItems = [
     image: "/image/project.png",
     longDescription:
       "This project focuses on building modern, responsive, and scalable frontend applications.",
-    stack: ["React", "Next.js", "Tailwind", "TypeScript"],
+    stack: ["React", "Next.js", "Tailwind", "TypeScript", "Better Auth"],
     link: "https://github.com/Sirguy62/potfolio",
     app: "https://bookora-mu.vercel.app",
   },
@@ -21,7 +21,7 @@ export const portfolioItems = [
     image: "/image/coming.jpg",
     longDescription:
       "Robust web applications with authentication, APIs, and databases.",
-    stack: ["Next.js", "Node.js", "MongoDB"],
+    stack: ["Next.js", "Prisma", "Better Auth"],
     link: "https://github.com/Sirguy62/workflow",
     app: "https://workflow-ebon-nu.vercel.app",
   },
