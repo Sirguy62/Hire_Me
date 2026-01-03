@@ -42,12 +42,10 @@ export default function Page() {
           lg:p-6
         "
         >
-          {/* DESKTOP NAVBAR */}
           <div className="hidden lg:block absolute top-6 right-6 z-20">
             <Navbar activePage={activePage} setActivePage={setActivePage} />
           </div>
 
-          {/* PAGE CONTENT */}
           {activePage === "About" && <About />}
           {activePage === "Resume" && <Resume />}
           {activePage === "Portfolio" && <Portfolio />}

@@ -1,7 +1,6 @@
 export default function Contact() {
   return (
     <section className="bg-[#1a1a1a] rounded-2xl mb-20 p-6 max-w-174.5 lg:max-w-217">
-      {/* HEADER */}
       <header className="mb-6">
         <h2 className="text-2xl font-bold">Contact</h2>
         <div className="my-2 h-1 w-full bg-gray-700/40 rounded-full overflow-hidden">
@@ -9,7 +8,6 @@ export default function Contact() {
         </div>
       </header>
 
-      {/* MAP */}
       <div className="mb-8 rounded-2xl overflow-hidden border border-[#2a2a2a]">
         <iframe
           title="Lagos map"
@@ -19,12 +17,9 @@ export default function Contact() {
         />
       </div>
 
-      {/* FORM TITLE */}
       <h3 className="text-xl font-semibold mb-6">Reach Out To Me</h3>
 
-      {/* FORM */}
       <form className="space-y-5 w-full">
-        {/* Full name */}
         <input
           type="text"
           placeholder="Full name"
@@ -43,7 +38,6 @@ export default function Contact() {
           "
         />
 
-        {/* Email */}
         <input
           type="email"
           placeholder="Email address"
@@ -61,8 +55,6 @@ export default function Contact() {
             focus:border-[#D4B15F]
           "
         />
-
-        {/* Message */}
         <textarea
           rows={4}
           placeholder="Your Message"
@@ -82,7 +74,6 @@ export default function Contact() {
           "
         />
 
-        {/* BUTTON */}
         <button
           type="button"
           className="

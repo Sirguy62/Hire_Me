@@ -54,20 +54,14 @@ export default function Resume() {
               BSC Computer Computer Engineering
             </p>
           </li>
-          {/* ITEM 2 */}
         </ol>
       </section>
-
-      {/* ===================== */}
-      {/* EXPERIENCE */}
-      {/* ===================== */}
       <section>
         <h3 className="flex items-center gap-2 text-lg font-semibold mb-6">
           <span className="text-[#D4B15F]">💼</span> Experience
         </h3>
 
         <ol className="relative pl-6 border-l border-gray-700">
-          {/* ITEM 1 */}
           <li
             className="
               relative
@@ -154,10 +148,7 @@ export default function Resume() {
         </ol>
       </section>
       <section className="mt-10 mb-10">
-        {/* TITLE */}
         <h2 className="text-2xl font-bold mb-6">My Skills</h2>
-
-        {/* CARD */}
         <div
           className="
           relative
@@ -167,7 +158,6 @@ export default function Resume() {
           shadow-inner
         "
         >
-          {/* React */}
           <div className="mb-6">
             <div className="flex justify-between mb-2">
               <span className="font-semibold">React</span>
@@ -178,7 +168,6 @@ export default function Resume() {
             </div>
           </div>
 
-          {/* TypeScript */}
           <div className="mb-6">
             <div className="flex justify-between mb-2">
               <span className="font-semibold">TypeScript</span>
@@ -189,7 +178,6 @@ export default function Resume() {
             </div>
           </div>
 
-          {/* Next JS */}
           <div className="mb-6">
             <div className="flex justify-between mb-2">
               <span className="font-semibold">Next JS</span>
@@ -199,8 +187,6 @@ export default function Resume() {
               <div className="h-full w-[90%] rounded-full bg-[#D4B15F]" />
             </div>
           </div>
-
-          {/* Postgres */}
           <div>
             <div className="flex justify-between mb-2">
               <span className="font-semibold">Prisma</span>

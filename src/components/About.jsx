@@ -55,12 +55,9 @@ export default function About() {
 
         <div>
           <section className="mb-12 relative">
-            {/* TITLE */}
             <h2 className="text-2xl font-bold mb-9 mt-4">Testimonials</h2>
 
-            {/* CARD */}
             <div className=" bg-[#1a1a1a] rounded-2xl p-2 overflow-hidden">
-              {/* AVATAR WITH ::BEFORE */}
               <div className="absolute top-12 left-6">
                 <div
                   className="
@@ -85,7 +82,6 @@ export default function About() {
                 </div>
               </div>
 
-              {/* CONTENT */}
               <div className="pt-14 flex flex-col justify-center items-center">
                 <h3 className="text-xl font-semibold">MR Praise Ordu</h3>
 
@@ -100,8 +96,6 @@ export default function About() {
                 </p>
               </div>
             </div>
-
-            {/* PROGRESS BAR */}
             <div className="mt-6 h-1 w-full bg-gray-700 rounded-full overflow-hidden">
               <div className="h-full w-[45%] bg-orange-300 rounded-full" />
             </div>

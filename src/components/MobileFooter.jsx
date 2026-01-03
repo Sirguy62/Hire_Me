@@ -63,8 +63,6 @@ export default function MobileFooter({ activePage, setActivePage }) {
                 >
                   <Icon size={18} />
                 </div>
-
-                {/* LABEL */}
                 <span
                   className={`mt-1 ${
                     isActive ? "text-orange-400" : "text-gray-400"

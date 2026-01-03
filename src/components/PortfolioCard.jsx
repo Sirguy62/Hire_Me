@@ -21,7 +21,6 @@ export default function PortfolioCard({ item, onOpen }) {
       <h3 className="px-3 pt-1 text-lg">{item.title}</h3>
       <p className="px-3 text-gray-300/40">{item.description}</p>
 
-      {/* Hover overlay */}
       <div
         className="
           absolute inset-0
