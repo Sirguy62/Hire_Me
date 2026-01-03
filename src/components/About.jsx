@@ -4,7 +4,7 @@ import { IoPerson } from "react-icons/io5";
 
 export default function About() {
   return (
-    <section className="bg-[#201f1f] mb-20 py-2 px-3 rounded-lg lg:rounded-xl max-w-174.5">
+    <section className="bg-[#201f1f] mb-20 p-6 rounded-2xl max-w-174.5 lg:max-w-217">
       <h1 className="text-2xl font-bold mb-2">About Me</h1>
       <div className="my-2 h-1 w-full bg-gray-700/40 rounded-full overflow-hidden">
         <div className="h-full w-[25%] bg-orange-300 rounded-full" />
@@ -31,8 +31,8 @@ export default function About() {
 
       <div className="flex flex-col mb-20 gap-4 mt-6">
         <h1 className="text-2xl">Specialties</h1>
-        <div className="flex flex-col md:flex-row lg:items-center gap-5">
-          <div className=" flex flex-col justify-center items-center gap-1  p-4 rounded-xl bg-gray-700/40">
+        <div className="flex flex-col md:flex-row lg:items-center md:justify-center gap-5 md:gap-15">
+          <div className=" flex flex-col justify-center items-center gap-1 min-w-[273.3px]  p-4 rounded-xl bg-gray-700/40">
             <Image src="/image/code.png" alt="code" width={80} height={60} />
             <div>
               <h3 className="font-semibold text-xl">Frontend Development</h3>
@@ -42,7 +42,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className=" flex flex-col justify-center items-center gap-1  p-4 rounded-xl bg-gray-700/40">
+          <div className=" flex flex-col justify-center items-center gap-1 min-w-[273.3px] p-4 rounded-xl bg-gray-700/40">
             <Image src="/image/web.png" alt="code" width={60} height={40} />
             <div>
               <h3 className="font-semibold">Mobile Responsiveness</h3>
@@ -106,14 +106,15 @@ export default function About() {
               <div className="h-full w-[45%] bg-orange-300 rounded-full" />
             </div>
           </section>
-          <div>
-            <h1 className="text-2xl pb-3">Clients</h1>
+          <div className="-mb-6">
+            <h1 className="text-3xl pb-3">Clients</h1>
             <Link href="https://www.hermextravels.com/">
               <Image
                 src="/image/hermex.png"
                 alt="hermex"
-                width={300}
-                height={300}
+                width={250}
+                height={250}
+                className="mt-5"
               />
             </Link>
           </div>

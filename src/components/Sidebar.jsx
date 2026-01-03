@@ -62,9 +62,8 @@ export default function Sidebar() {
   return (
     <aside
       ref={sidebarRef}
-      className="relative w-full bg-[#201f1f] rounded-2xl lg:sticky  px-2 pt-2 lg:p-6 max-w-174.5 lg:w-70"
+      className="relative w-full bg-[#201f1f] rounded-2xl px-2 pt-2 lg:p-6 max-w-174.5 lg:w-70"
     >
-      {/* ICON TOGGLE BUTTON */}
       <button
         onClick={() => setShowContacts(!showContacts)}
         aria-label="Toggle contacts"
@@ -127,11 +126,11 @@ export default function Sidebar() {
             </span>
           </div>
           <div className="flex gap-3 lg:mt-2 lg:justify-center">
-            <button className="bg-gradient-to-r from-orange-400/40 to-orange-500/40 p-2 md:px-4 md:py-2 rounded-lg text-sm">
+            <button className="bg-gradient-to-r from-orange-[#D4B15F]/40 to-orange-100/40 p-2 md:px-4 md:py-2 rounded-lg text-sm">
               Hire me
             </button>
             <button
-              className="flex items-center justify-center gap-2 bg-gradient-to-r from-orange-400/40 to-orange-500/40 px-4 py-2 rounded-lg text-sm"
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-orange-[#D4B15F]/40 to-orange-100/40 px-4 py-2 rounded-lg text-sm"
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = "/resume.pdf";

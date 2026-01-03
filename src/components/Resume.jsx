@@ -1,6 +1,6 @@
 export default function Resume() {
   return (
-    <article className="bg-[#1a1a1a] rounded-2xl p-6">
+    <article className="bg-[#1a1a1a] rounded-2xl p-6 max-w-174.5 lg:max-w-217">
       {/* HEADER */}
       <header className="mb-6">
         <h2 className="text-2xl font-bold">Resume</h2>
