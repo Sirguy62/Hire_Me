@@ -145,9 +145,12 @@ export default function Sidebar() {
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-orange-[#D4B15F]/40 to-orange-100/40 px-4 py-2 rounded-lg text-sm"
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/resume.pdf";
+                link.href = "/portfolio.pdf";
                 link.download = "Edwin-Gospel-Resume.pdf";
+                document.body.appendChild(link);
                 link.click();
+                document.body.removeChild(link);
+
               }}
             >
               CV
