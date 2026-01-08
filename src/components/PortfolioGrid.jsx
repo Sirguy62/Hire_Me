@@ -10,7 +10,7 @@ export default function PortfolioGrid() {
 
   return (
     <>
-      <div className="flex flex-wrap lg:gap-12 justify-center items-center gap-5 px-6 rounded-xl py-5">
+      <div className="flex flex-wrap lg:gap-12 justify-center items-center gap-5 mb-10 lg:mb-0 px-6 py-5">
         {portfolioItems.map((item) => (
           <PortfolioCard
             key={item.id}

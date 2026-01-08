@@ -10,16 +10,23 @@ export default function PortfolioCard({ item, onOpen }) {
       onClick={onOpen}
       className="
         group relative cursor-pointer
-      flex flex-col items-left justify-center shadow-gray-400/40 shadow-lg rounded-2xl
-        bg-gray-700/40 overflow-hidden
+      flex flex-col items-left justify-center shadow-gray-400/40  rounded-lg
+        bg-gray-700/40 overflow-hidden w-[300px]
       "
     >
-      <Link className="rounded-lg" href="https://bookora-mu.vercel.app">
-        <Image src={item.image} alt={item.title} width={300} height={400} />
+      <Link className="" href="https://bookora-mu.vercel.app">
+        <Image
+          src={item.image}
+          alt={item.title}
+          width={300}
+          height={400}
+          className="rounded-lg"
+        />
       </Link>
-
-      <h3 className="px-3 pt-1 text-lg">{item.title}</h3>
-      <p className="px-3 text-gray-300/40">{item.description}</p>
+      <div className="py-5">
+        <h3 className="px-3 pt-1 text-lg">{item.title}</h3>
+        <p className="px-3 text-sm  text-gray-300/40">{item.description}</p>
+      </div>
 
       <div
         className="
@@ -35,10 +42,4 @@ export default function PortfolioCard({ item, onOpen }) {
     </div>
   );
 }
-{/* <div className="flex flex-col items-left justify-center shadow-gray-400/40 shadow-lg rounded-2xl">
-  <Link className="rounded-lg" href="https://bookora-mu.vercel.app">
-    <Image src="/image/project.png" alt="project" width={300} height={400} />
-  </Link>
-  <h2 className="px-3 pt-1 text-lg">Bookora | Travel App</h2>
-  <p className="px-3 text-gray-300/40">Web Development</p>
-</div>; */}
+

@@ -5,9 +5,8 @@ export const portfolioItems = [
     id: 1,
     name: "Bookora",
     title: "Frontend Development",
-    description: "High-quality professional development.",
     image: "/image/project.png",
-    longDescription:
+    description:
       "This project focuses on building modern, responsive, and scalable frontend applications.",
     stack: ["React", "Next.js", "Tailwind", "TypeScript", "Better Auth"],
     link: "https://github.com/Sirguy62/potfolio",
@@ -17,10 +16,9 @@ export const portfolioItems = [
     id: 2,
     name: "Workflow",
     title: "Web Applications",
-    description: "Full-stack scalable applications.",
-    image: "/image/coming.jpg",
-    longDescription:
-      "Robust web applications with authentication, APIs, and databases.",
+    image: "/image/work.png",
+    description:
+      "Robust web applications with authentication, APIs, and database.",
     stack: ["Next.js", "Prisma", "Better Auth"],
     link: "https://github.com/Sirguy62/workflow",
     app: "https://workflow-ebon-nu.vercel.app",
