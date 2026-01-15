@@ -23,4 +23,15 @@ export const portfolioItems = [
     link: "https://github.com/Sirguy62/workflow",
     app: "https://workflow-ebon-nu.vercel.app",
   },
+  {
+    id: 3,
+    name: "BookoraAI",
+    title: "Web Applications",
+    image: "/image/ai.png",
+    description:
+      "AI suggestion application using open ai and google maps",
+    stack: ["Next.js", "Prisma", "Better Auth"],
+    link: "https://github.com/Sirguy62/Twilio-",
+    app: "https://bookora-ai.vercel.app/",
+  },
 ];
