@@ -42,6 +42,6 @@ export const portfolioItems = [
       "A webapp used to manage teachers and students, like assigning subjects to students",
     stack: ["React", "Refine", "Prisma", "Better Auth"],
     link: "https://github.com/Sirguy62/classroom",
-    app: "https://https://classroom-henna-sigma.vercel.app/",
+    app: "https://classroom-henna-sigma.vercel.app/",
   },
 ];
