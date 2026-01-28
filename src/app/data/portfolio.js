@@ -28,10 +28,20 @@ export const portfolioItems = [
     name: "BookoraAI",
     title: "Web Applications",
     image: "/image/ai.png",
-    description:
-      "AI suggestion application using open ai and google maps",
+    description: "AI suggestion application using open ai and google maps",
     stack: ["Next.js", "Prisma", "Better Auth"],
     link: "https://github.com/Sirguy62/Twilio-",
     app: "https://bookora-ai.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "ClassRoom Management Application",
+    title: "Web Applications",
+    image: "/image/room.png",
+    description:
+      "A webapp used to manage teachers and students, like assigning subjects to students",
+    stack: ["React", "Refine", "Prisma", "Better Auth"],
+    link: "https://github.com/Sirguy62/classroom",
+    app: "https://https://classroom-henna-sigma.vercel.app/",
   },
 ];
